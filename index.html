@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ATM Gem Calculator | Growtopia</title>
+	<link href="styles.css" rel="stylesheet">
+	<script src="main.js"></script>
+</head>
+
+<body>
+<div class="top">
+    <h2>Growtopia ATM Calculator</h3>
+</div>
+
+<div class="split left">
+    <div class="info">
+        <p>Welcome to my ATM calculator. <br> Just enter the number of ATMs to start, as well as the number of harvests (1 a day) <br>and let my calculator do the rest!<br></p>
+        <p>My calculator also assumes that you are to buy city packs with the gems that you earn.<br>Due to this, the number of atms shown each harvest may increase as it adds as many as it can</p>
+        <p>Please note that until valid numbers (above 0) are entered into both text boxes, nothing will appear.<br>-Seanule</p>
+    </div>
+    <div class="centered">
+        <form name="userArea">
+            <h3># of starting ATMs: </h3>
+            <input type="number" id="inputAtm" value="0">
+            <br>
+            <h3># of harvests: </h3>
+            <input type="number" id="inputDuration" value="0">
+            
+        </form>
+        <br>
+        <button onclick="runUpdate()">Calculate</button>
+    </div>
+  </div>
+  
+  <div class="split right">
+        <table id="dataTable">
+            <tr>
+                <th>Harvest</th>
+                <th>ATMs</th>
+                <th>Daily Gems</th>
+                <th>Cumulative Gems</th>
+            </tr>
+        </table>
+  </div>
+
+
+</body>
+
+</html>
